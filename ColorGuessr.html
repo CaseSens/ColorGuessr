@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML 5 Boilerplate</title>
+    <link rel="stylesheet" href="ColorGuessr.css" />
+    <script src="ColorGuessr.js" defer></script>
+  </head>
+  <body>
+    <div id="pageContainer">
+      <div class="title-container">
+        <p>THE GREAT</p>
+        <p style="font-size: 2em">COLOR</p>
+        <p>GUESSING GAME</p>
+      </div>
+      <div class="options-container">
+        <button class="option">NEW COLORS</button>
+        <div class="streak-container">
+          <h2>Streak:</h2>
+          <p id="streakText">0</p>
+        </div>
+        <div>
+          <button class="option">EASY</button>
+          <button class="option">HARD</button>
+        </div>
+      </div>
+      <div class="game-container">
+        <div id="colorBlock"></div>
+        <div id="colorFields">
+          <input
+            type="range"
+            min="0"
+            max="255"
+            value="128"
+            class="slider"
+            id="red"
+          />
+          <input
+            type="range"
+            min="0"
+            max="255"
+            value="128"
+            class="slider"
+            id="green"
+          />
+          <input
+            type="range"
+            min="0"
+            max="255"
+            value="128"
+            class="slider"
+            id="blue"
+          />
+        </div>
+        <div id="colorResultBlock"></div>
+        <button onclick="submit()" class="submitButton">Submit</button>
+      </div>
+    </div>
+  </body>
+</html>

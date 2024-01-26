@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML 5 Boilerplate</title>
+    <link rel="stylesheet" href="RGBGuessr.css" />
+    <script src="RGBGuessr.js" defer></script>
+  </head>
+  <body>
+    <div id="pageContainer">
+        <div class="title-container">
+            <p>THE GREAT</p>
+            <p id="rgbText"></p>
+            <p>GUESSING GAME</p>
+        </div>
+        <div class="options-container">
+            <button class="option">NEW COLORS</button>
+            <div class="streak-container">
+                <h2>Streak:</h2>
+                <p id="streakText">0</p>
+            </div>
+            <div>
+                <button class="option">EASY</button>
+                <button class="option">HARD</button>
+            </div>
+        </div>
+        <div class="choice-container">
+            <div class="choice-grid">
+                <button id="choice1" class="choice" onclick="buttonSelected(0)"></button>
+                <button id="choice2" class="choice" onclick="buttonSelected(1)"></button>
+                <button id="choice3" class="choice" onclick="buttonSelected(2)"></button>
+                <button id="choice4" class="choice" onclick="buttonSelected(3)"></button>
+                <button id="choice5" class="choice" onclick="buttonSelected(4)"></button>
+                <button id="choice6" class="choice" onclick="buttonSelected(5)"></button>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
